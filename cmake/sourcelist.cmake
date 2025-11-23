@@ -6,7 +6,7 @@ set(sources ${sources}
 	src/payloadHandlers/graphVariableHandler.cpp
 	src/payloadHandlers/particleHandler.cpp
 	src/payloadHandlers/PayloadHandler.h
-	src/payloadHandlers/setGhostApplyHandler.cpp
+	src/payloadHandlers/setGhostHandler.cpp
 	src/payloadHandlers/spellApplyHandler.cpp
 	src/payloadHandlers/spellCastHandler.cpp
 	src/CPR.cpp
