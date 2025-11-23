@@ -8,4 +8,12 @@ set(headers ${headers}
 	include/Hooks.h
 	include/MCP.h
 	include/Serialization.h
+	include/API.h
+	include/CPR.h
+	include/offsets.h
+	include/PayloadHandlerManager.h
+	include/PayloadInterpreter.h
+	include/payloadManager.h
+	include/Plugin.h
+	src/payloadHandlers/payloadHandler.h
 )

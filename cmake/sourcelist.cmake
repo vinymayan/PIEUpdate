@@ -1,10 +1,24 @@
 set(sources ${sources}
+	src/payloadHandlers/actorValueHandler.cpp
+	src/payloadHandlers/cameraHandler.cpp
+	src/payloadHandlers/CPRHandler.cpp
+	src/payloadHandlers/globalTimeHandler.cpp
+	src/payloadHandlers/graphVariableHandler.cpp
+	src/payloadHandlers/particleHandler.cpp
+	src/payloadHandlers/PayloadHandler.h
+	src/payloadHandlers/setGhostApplyHandler.cpp
+	src/payloadHandlers/spellApplyHandler.cpp
+	src/payloadHandlers/spellCastHandler.cpp
+	src/CPR.cpp
 	src/Events.cpp
-	src/plugin.cpp
-	src/Utils.cpp
-	src/Settings.cpp
-	src/Manager.cpp
 	src/Hooks.cpp
+	src/main.cpp
+	src/Manager.cpp
 	src/MCP.cpp
- 	src/Serialization.cpp
+	src/PayloadInterpreter.cpp
+	src/PayloadManager.cpp
+	src/plugin.cpp
+	src/Serialization.cpp
+	src/Settings.cpp
+	src/Utils.cpp
 )
