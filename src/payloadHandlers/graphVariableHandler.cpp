@@ -109,9 +109,15 @@ void graphVariableHandler::copyGraphVariableInt(RE::Actor* actor, std::vector<st
 	int val;
 
 	if (actor->GetGraphVariableInt(sourceVar, val)) {
+		// Se conseguiu, aplica na Target e loga o sucesso
 		actor->SetGraphVariableInt(targetVar, val);
+		logger::info("Copied Int {} ({}) to {}", sourceVar, val, targetVar);
 	}
-	logger::info("Copied Int {} ({}) to {}", sourceVar, val, targetVar);
+	else {
+		// Se falhou, loga um aviso informando que a variável source não foi encontrada
+		logger::warn("Failed to copy Int: Source variable '{}' not found on actor.", sourceVar);
+	}
+	
 }
 
 void graphVariableHandler::process(RE::Actor* actor, std::vector<std::string_view>* param, GRAPHVARIABLETYPE graphVariableType)
